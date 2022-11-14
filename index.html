@@ -1,0 +1,70 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+       </head> 
+       <body background="people-playing-table-tennis_23-2148662482.webp"> 
+         <center> 
+           <div class="btn btn-primary heading"> 
+             <h2 AI ping-pong GAME>AI Ping - Pong GAME</h2> 
+             <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" > Instructions</button> 
+            </div> 
+            <br><br>
+             <button id="start_button" onclick="startGame()" class="btn btn-primary">Start Playing</button>
+            <br><br>
+               <h4 id="status" class="btn btn-default"></h4>
+            <br><br>
+             <div id="canvas"></div>
+             <br><br>
+             <button class="btn btn-danger" id="restart_button" onclick="restart()">Restart</button>
+             <div id="myModal" class="modal fade">
+              <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h3>Instructions</h3>
+              </div>
+              <div class="modal-body">
+                <ol>
+                  <li>
+                    Use your mouse to move your ping-pong bat
+                  </li>
+                  <li>
+                    Move your mouse up to move your bat up
+                  </li>
+                <li>
+                  Move your mouse down to move your bat down
+                </li>
+                <li>
+                  Move your mouse left to move your bat left
+                </li>
+                <li>
+                  Move your mouse right tomove your mouse right
+                </li>
+                </ol>
+              </div>
+              </div>
+              </div>
+             </div>
+
+             <br><br>
+             <div class="footer">
+              Devloped by : Shree
+             </div>
+
+             </center> 
+
+        <script src="main.js"></script>
+    </body>
+</html>
